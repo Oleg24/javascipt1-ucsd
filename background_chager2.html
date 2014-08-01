@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Welcome to JavaScript 101</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+<header><h1>Welcome To JavaScript 101</h1></header>
+<body>
+<h2>What Color Do You Want?</h2>
+
+<div id="square"></div>
+ 
+<button type="button" id="orange">Orange</button>
+<button type="button" id="blue">Blue</button>
+<button type="button" id="green">Green</button>
+<button type="button" id="pink">Pink</button><br/>
+<button type="button" id="reset"><strong>RESET</strong></button>
+<script>
+	var square = document.getElementById("square"),
+    orange = document.getElementById('orange'); 
+	blue = document.getElementById('blue');
+	green = document.getElementById('green');
+	pink = document.getElementById('pink');
+	reset = document.getElementById('reset');
+	function colorOrange () {
+	square.style.backgroundColor = "#FF6633";
+	square.innerHTML = "ORANGE";
+	};
+	function colorBlue () {
+	square.style.backgroundColor = "#00FFFF";
+	square.innerHTML = "BLUE";
+	};
+	function colorGreen () {
+	square.style.backgroundColor = "#33FF33";
+	square.innerHTML = "Green";
+	};
+	function colorPink () {
+	square.style.backgroundColor = "#FF3366";
+	square.innerHTML = "Pink";
+	};
+	function resetColor () {
+	square.style.backgroundColor = "transparent";
+	square.innerHTML ="";
+	};
+
+ 
+orange.onclick = colorOrange;
+blue.onclick = colorBlue;		
+green.onclick = colorGreen;		
+pink.onclick = colorPink;	
+reset.onclick = resetColor;	
+			
+	
+		
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
